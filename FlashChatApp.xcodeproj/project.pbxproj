@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0799D32B8E7A2E00AEFFE7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0799D22B8E7A2E00AEFFE7 /* WelcomeView.swift */; };
 		AD5F6A922B8CF75E0081E129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F6A912B8CF75E0081E129 /* AppDelegate.swift */; };
 		AD5F6A942B8CF75E0081E129 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F6A932B8CF75E0081E129 /* SceneDelegate.swift */; };
 		AD5F6A9B2B8CF75F0081E129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5F6A9A2B8CF75F0081E129 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD0799D22B8E7A2E00AEFFE7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		AD5F6A8E2B8CF75E0081E129 /* FlashChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5F6A912B8CF75E0081E129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD5F6A932B8CF75E0081E129 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0799D42B8E7FC000AEFFE7 /* WelcomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				AD0799D22B8E7A2E00AEFFE7 /* WelcomeView.swift */,
+				AD5F6AA82B8CF8450081E129 /* WelcomeViewController.swift */,
+			);
+			path = WelcomeModule;
+			sourceTree = "<group>";
+		};
 		AD5F6A852B8CF75E0081E129 = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				AD5F6AA52B8CF7810081E129 /* App */,
-				AD5F6AA72B8CF7A00081E129 /* Controllers */,
+				AD0799D42B8E7FC000AEFFE7 /* WelcomeModule */,
 				AD5F6AA62B8CF7880081E129 /* Resources */,
 			);
 			path = FlashChatApp;
@@ -78,14 +89,6 @@
 				AD5F6A9F2B8CF75F0081E129 /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		AD5F6AA72B8CF7A00081E129 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				AD5F6AA82B8CF8450081E129 /* WelcomeViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +164,7 @@
 				AD5F6AA92B8CF8450081E129 /* WelcomeViewController.swift in Sources */,
 				AD5F6A922B8CF75E0081E129 /* AppDelegate.swift in Sources */,
 				AD5F6A942B8CF75E0081E129 /* SceneDelegate.swift in Sources */,
+				AD0799D32B8E7A2E00AEFFE7 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
