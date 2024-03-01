@@ -27,13 +27,25 @@ final class WelcomeView: UIView {
     }
 }
 
-// MARK: - Common Init
+// MARK: - Private Methods
 extension WelcomeView {
     
     private func commonInit() {
         setupTitleLabelConstraints()
         setupLogInButtonConstraints()
         setupRegisterButtonConstraints()
+        showIterationText()
+    }
+    
+    private func showIterationText() {
+        var charIndex = 0.0
+        let titleText = "⚡️Flash Chat"
+        for letter in titleText {
+            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { timer in
+                self.titleLabel.text?.append(letter)
+            }
+            charIndex += 1
+        }
     }
 }
 
@@ -80,7 +92,7 @@ extension WelcomeView {
     
     private func makeLabel() -> UILabel {
         let label = UILabel()
-        label.text = "⚡️Flash Chat"
+        label.text = ""
         label.font = .boldSystemFont(ofSize: 50)
         label.textColor = UIColor(named: "BrandBlue")
         return label
